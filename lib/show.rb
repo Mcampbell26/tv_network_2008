@@ -21,7 +21,13 @@ class Show
       char.salary
       return char.actor
     end
+  end
 
-
+  def actors
+    all_actors =[]
+    @characters.each do |char|
+      all_actors << char.actor
+    end
+    all_actors
   end
 end
